@@ -33,6 +33,9 @@ public class RandomATron {
         return pairOfNames;
     }
 
+    public int amountOfNames(){
+        return this.names.size();
+
 }
 
 }
