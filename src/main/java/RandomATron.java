@@ -18,15 +18,22 @@ public class RandomATron {
         this.names.add("Charlie Watts");
     }
 
+    public void addName(String name){
+        this.names.add(name);
+    }
+
     public void shuffleNames() {
         Collections.shuffle(this.names);
     }
 
     public String single() {
-        return this.names.get(0);
+        if (this.names.size() > 0) {
+            return this.names.remove(0);
+        }
+        return "No more names!";
     }
 
-    public ArrayList<String> pairs() {
+        public ArrayList<String> pairs() {
         ArrayList<String> pairOfNames = new ArrayList<String>();
         pairOfNames.add(this.names.get(0));
         pairOfNames.add(this.names.get(1));
@@ -35,7 +42,6 @@ public class RandomATron {
 
     public int amountOfNames(){
         return this.names.size();
-
 }
 
 }

@@ -13,19 +13,18 @@ public class RandomATronTest {
             }
 
             @Test
-    public void classStartsWith19Names(){
-                assertEquals(19, classNames.amountOfNames());
+    public void classStartsWith9Names(){
+                assertEquals(9, classNames.amountOfNames());
             }
 
             @Test
     public void canGetSingleNameBack(){
-                assertEquals("Paul", classNames.single());
+                assertEquals("John Paul Jones", classNames.single());
             }
 
             @Test
-    public void canGetPiars(){
+    public void canGetPairs(){
                 assertEquals(2, classNames.pairs().size());
             }
 
         }
-}
